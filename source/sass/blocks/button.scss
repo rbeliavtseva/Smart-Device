@@ -1,0 +1,15 @@
+.button {
+  padding: 13px 26px 14px;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-primary;
+  background-color: transparent;
+  white-space: nowrap;
+  cursor: pointer;
+}

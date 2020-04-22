@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 10px;
+  background-color: $color-tertiary;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: $desktop-header-max-width;
+    margin: 0 auto;
+  }
+
+  &__container-inner {
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      width: 35%;
+    }
+
+    &--right {
+      width: 65%;
+    }
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding: 22px 25px;
+
+    &__button {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding: 18px
+  }
+}

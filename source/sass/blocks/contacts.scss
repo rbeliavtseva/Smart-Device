@@ -1,0 +1,53 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 38px 0 auto;
+
+  @media (max-width: $tablet-max-width) {
+    margin: 0 0 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-primary;
+
+    &:not(:last-child) {
+      margin-right: 88px;
+    }
+
+    @media (max-width: $tablet-max-width) {
+      &--email svg {
+        width: 25px;
+        height: 18px;
+      }
+
+      &--phone svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 33px;
+      }
+    }
+
+    @media (max-width: $mobile-max-width) {
+      &:not(:last-child) {
+        margin-right: 23px;
+      }
+    }
+  }
+}
+
+.contacts span {
+  margin-left: 10px;
+  line-height: 18px;
+  white-space: nowrap;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
