@@ -1,0 +1,54 @@
+.button-show {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  @media (max-width: $mobile-max-width) {
+    display: block;
+    position: relative;
+
+    &--no-js {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      content: "";
+      width: 16px;
+      height: 1px;
+      background-color: $color-border-dark;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 7px;
+      transform: translateY(-50%);
+      content: "";
+      width: 1px;
+      height: 16px;
+      background-color: $color-border-dark;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      background-color: $color-text;
+    }
+  }
+
+  &--active {
+    &::after {
+      display: none;
+    }
+  }
+}
