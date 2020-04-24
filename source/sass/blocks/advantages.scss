@@ -1,0 +1,139 @@
+.advantages {
+  position: relative;
+  padding: 110px 30px;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    bottom: 110px;
+    right: 50px;
+    content: "";
+    width: 298px;
+    height: 298px;
+    background-image: url("../../img/triangle-desktop@1x.png");
+    transform: rotate(180deg);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    width: calc((100% - 30px) / 2);
+    padding: 40px 40px 50px 40px;
+    border: 1px solid $color-border-light;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 3px;
+      height: 100%;
+      background-color: $color-secondary;
+    }
+
+    &:first-child {
+      &::after {
+        position: absolute;
+        z-index: -1;
+        top: -70px;
+        left: -170px;
+        content: "";
+        width: 298px;
+        height: 298px;
+        background-image: url("../../img/triangle-desktop@1x.png");
+      }
+    }
+
+    & svg {
+      fill: $color-secondary;
+    }
+
+    & h3 {
+      position: relative;
+      margin: 20px 0 15px 0;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 24px;
+      line-height: 34px;
+      color: $color-secondary;
+    }
+
+    & p {
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: $color-secondary;
+
+      & svg {
+        fill: $color-primary;
+      }
+
+      & h3,
+      & p {
+        color: $color-primary;
+      }
+    }
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding: 54px 25px;
+
+    &__item {
+      padding: 25px 18px 21px 27px;
+
+      & h3 {
+        margin: 0 0 7px 0;
+      }
+
+      &--confidential {
+        & h3 {
+          margin-bottom: 16px;
+        }
+      }
+
+      &--cost {
+        padding-bottom: 35px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 39px 16px 39px 14px;
+
+    &__item {
+      width: 100%;
+
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      & h3 {
+        margin: 3px 0 7px 0;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
