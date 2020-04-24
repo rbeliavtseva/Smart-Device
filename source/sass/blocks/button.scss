@@ -1,15 +1,71 @@
 .button {
   padding: 13px 26px 14px;
-  border: 1px solid $color-primary;
   border-radius: 5px;
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.7px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: $color-primary;
   background-color: transparent;
   white-space: nowrap;
   cursor: pointer;
+
+  &--bordered {
+    border: 1px solid $color-primary;
+
+    &:hover,
+    &:focus {
+      color: $color-tertiary;
+      background-color: $color-primary;
+    }
+
+    &:active {
+      background-color: rgba($color-primary, 0.6);
+    }
+  }
+
+  &--blue {
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: $color-secondary;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color-secondary, 0.6);
+    }
+
+    &:active {
+      background-color: rgba($color-secondary, 0.2);
+    }
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
+
+  &--text {
+    position: relative;
+    border: none;
+    font-family: "PT Mono", "Courier", monospace;
+    text-transform: none;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      animation: MoveUpDown 1s linear infinite;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 19px 26px 19px;
+    letter-spacing: 0.05em;
+  }
 }
