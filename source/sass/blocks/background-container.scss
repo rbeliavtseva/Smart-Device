@@ -1,0 +1,52 @@
+.background-container {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    bottom: -50px;
+    left: -14%;
+    content: "";
+    width: 872px;
+    height: 873px;
+    background-image: url("../../img/triangle-big-desktop@1x.png");
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 872px;
+    height: 873px;
+    background-image: url("../../img/triangle-big-desktop@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    &::before,
+    &::after {
+      background-image: url("../../img/triangle-big-desktop@2x.png");
+      background-size: 872px auto;
+    }
+  }
+
+  @media (max-width: $tablet-max-width) {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      left: 85%;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    &::after {
+      top: 37%;
+      left: 100%;
+    }
+  }
+}

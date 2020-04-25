@@ -4,6 +4,7 @@
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -26,7 +27,24 @@
     }
   }
 
+  &--bordered-blue {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 14px 50px;
+    border: 1px solid $color-secondary;
+    color: $color-secondary;
+    background-color: $color-primary;
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      background-color: $color-secondary;
+    }
+  }
+
   &--blue {
+    display: inline-block;
+    vertical-align: middle;
     border: none;
     font-size: 16px;
     line-height: 19px;
@@ -35,10 +53,6 @@
     &:hover,
     &:focus {
       background-color: rgba($color-secondary, 0.6);
-    }
-
-    &:active {
-      background-color: rgba($color-secondary, 0.2);
     }
   }
 
@@ -56,6 +70,7 @@
     border: none;
     font-family: "PT Mono", "Courier", monospace;
     text-transform: none;
+    letter-spacing: normal;
     opacity: 0.5;
 
     &:hover,
@@ -66,6 +81,9 @@
 
   @media (max-width: $mobile-max-width) {
     padding: 19px 26px 19px;
-    letter-spacing: 0.05em;
+
+    &--bordered-blue {
+      padding: 11px 50px 15px 50px;
+    }
   }
 }

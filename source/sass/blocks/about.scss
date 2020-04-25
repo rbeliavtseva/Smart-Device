@@ -1,0 +1,144 @@
+.about {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: $desktop-aligner;
+  margin: 0 auto;
+  padding: 0 140px 100px 130px;
+  color: $color-text;
+
+  &__wrap {
+    position: relative;
+    padding-left: 160px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: -30px;
+      width: 220px;
+      height: 317px;
+      background-image: url("../../img/year-desktop@1x.png");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::before {
+        background-image: url("../../img/year-desktop@2x.png");
+        background-size: 220px auto;
+      }
+    }
+  }
+
+  &__heading {
+    margin: 0 0 21px 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 51px;
+    color: inherit;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  & p {
+    margin: 0;
+    color: inherit;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 0 25px 100px 25px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0 33px 100px 33px;
+
+    &__wrap {
+      position: relative;
+      padding-left: 180px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -30px;
+        width: 244px;
+        height: 362px;
+        background-image: url("../../img/year-tablet@1x.png");
+        background-repeat: no-repeat;
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &::before {
+          background-image: url("../../img/year-tablet@2x.png");
+          background-size: 244px auto;
+        }
+      }
+    }
+
+    &__heading {
+      margin-bottom: 27px;
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    &__text {
+      padding-left: 2px;
+      margin-bottom: 40px;
+    }
+
+    &__desktop-only {
+      display: none;
+    }
+
+    & p {
+      &:last-of-type {
+        position: relative;
+        display: inline;
+
+        &::after {
+          content: "..";
+          display: inline-block;
+          vertical-align: text-bottom;
+          position: absolute;
+          bottom: 0;
+          right: -20px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 18px 15px 65px 15px;
+
+    &__wrap {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 21px;
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    & p {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
