@@ -46,43 +46,46 @@
       background-image: url("../../img/services-3-desktop@2x.png");
     }
   }
+}
 
-  & a {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 50px 35px;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
+.service-card__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 50px 60px 50px 44px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
 
-    &:hover,
-    &:focus {
-      &::before {
-        position: absolute;
-        content: "";
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: calc(100% + 60px);
-        height: calc(100% + 80px);
-        border: 3px solid $color-secondary;
-        background-color: transparent;
-      }
+  &:hover,
+  &:focus {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 60px);
+      height: calc(100% + 80px);
+      border: 3px solid $color-secondary;
+      background-color: transparent;
     }
   }
+}
 
-  & span {
-    display: inline-block;
-    vertical-align: middle;
-    width: 65%;
-    font-size: 20px;
-    line-height: 30px;
-  }
+.service-card__text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 65%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
 
-  @media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-max-width) {
+  .service-card {
     width: 715px;
     height: 256px;
     background-size: auto 256px;
@@ -114,22 +117,26 @@
         background-image: url("../../img/services-3-tablet@2x.png");
       }
     }
+  }
 
-    & a {
-      &:hover,
-      &:focus {
-        &::before {
-          display: none;
-        }
+  .service-card__link {
+    padding: 40px 60px 50px 44px;
+
+    &:hover,
+    &:focus {
+      &::before {
+        display: none;
       }
-    }
-
-    & span {
-      width: 30%;
     }
   }
 
-  @media (max-width: $mobile-max-width) {
+  .service-card__text {
+    width: 30%;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .service-card {
     width: 290px;
 
     &--production {
@@ -159,13 +166,13 @@
         background-image: url("../../img/services-3-mobile@2x.png");
       }
     }
+  }
 
-    & a {
-      padding: 20px 35px;
-    }
+  .service-card__link {
+    padding: 20px 35px;
+  }
 
-    & span {
-      width: 90%;
-    }
+  .service-card__text{
+    width: 70%;
   }
 }

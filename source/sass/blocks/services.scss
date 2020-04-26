@@ -1,77 +1,78 @@
 .services {
   background-color: $color-tertiary;
   color: $color-primary;
+}
 
-  &__container {
-    max-width: $desktop-aligner;
-    margin: 0 auto;
-    padding: 93px 120px 127px 120px;
+.services__container {
+  max-width: $desktop-aligner;
+  margin: 0 auto;
+  padding: 88px 120px 127px 120px;
+}
+
+.services__heading {
+  margin: 0 0 52px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: inherit;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .services__container {
+    padding: 50px 26px 78px 27px;
   }
 
-  &__heading {
-    margin: 0 0 47px 0;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 51px;
-    color: inherit;
+  .services__heading {
+    width: 85%;
+    margin: 0 0 48px 0;
+    font-size: 32px;
+    line-height: 45px;
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .services__list {
+    flex-direction: column;
+    align-items: center;
   }
 
-  &__item {
+  .services__item {
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 0;
+      margin-bottom: 46px;
     }
   }
+}
 
-  @media (max-width: $tablet-max-width) {
-    &__container {
-      padding: 53px 26px 78px 27px;
-    }
-
-    &__heading {
-      width: 85%;
-      margin: 0 0 46px 0;
-      font-size: 32px;
-      line-height: 45px;
-    }
-
-    &__list {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__item {
-      &:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 46px;
-      }
-    }
+@media (max-width: $mobile-max-width) {
+  .services__container {
+    padding: 50px 15px 64px 15px;
   }
 
-  @media (max-width: $mobile-max-width) {
-    &__container {
-      padding: 37px 15px 64px 15px;
-    }
+  .services__heading {
+    width: 100%;
+    margin: 0 0 42px 10px;
+    padding-right: 10px;
+    font-size: 28px;
+    line-height: 39px;
+  }
 
-    &__heading {
-      width: 100%;
-      margin: 0 0 37px 0;
-      font-size: 28px;
-      line-height: 39px;
-    }
-
-    &__item {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
+  .services__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
 }
