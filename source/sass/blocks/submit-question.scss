@@ -2,18 +2,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  & input,
-  & textarea {
-    padding: 14px 16px 19px 16px;
-    border: none;
-    color: $color-primary;
-    background-color: rgba($color-primary, 0.1);
-
-    &::placeholder {
-      color: $color-primary;
-    }
-  }
-
   & input {
     width: calc((100% - 31px) / 2);
     margin-bottom: 40px;
