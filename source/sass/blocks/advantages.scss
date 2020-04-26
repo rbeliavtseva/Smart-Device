@@ -1,11 +1,11 @@
 .advantages {
   position: relative;
-  padding: 110px 30px;
+  padding: 110px 30px 105px 30px;
 
   &::after {
     position: absolute;
     z-index: -1;
-    bottom: 110px;
+    bottom: 124px;
     right: 28px;
     content: "";
     width: 298px;
@@ -65,8 +65,8 @@
     &::after {
       position: absolute;
       z-index: -1;
-      top: -70px;
-      left: -170px;
+      top: -67px;
+      left: -174px;
       content: "";
       width: 298px;
       height: 298px;

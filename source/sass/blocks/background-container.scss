@@ -16,7 +16,7 @@
   &::after {
     position: absolute;
     z-index: -1;
-    top: 100px;
+    top: 146px;
     left: calc(50% + 35px);
     transform: translateX(-50%);
     content: "";
@@ -45,8 +45,8 @@
 
   @media (max-width: $mobile-max-width) {
     &::after {
-      top: 37%;
-      left: 100%;
+      top: calc(36% - 6px);
+      left: calc(100% - 3px);
     }
   }
 }
