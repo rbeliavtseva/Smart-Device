@@ -1,0 +1,26 @@
+.button-close {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/icon-close.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}

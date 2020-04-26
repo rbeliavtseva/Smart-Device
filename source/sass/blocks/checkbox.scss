@@ -28,6 +28,12 @@
       background-color: transparent;
     }
   }
+
+  &--popup {
+    & label {
+      padding-left: 48px;
+    }
+  }
 }
 
 .checkbox input:checked + label::after {

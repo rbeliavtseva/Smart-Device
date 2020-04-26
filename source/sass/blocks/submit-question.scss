@@ -14,7 +14,22 @@
   & textarea {
     width: 100%;
     height: 154px;
-    padding-top: 12px;
+    resize: none;
+  }
+
+  &--popup {
+    & input {
+      width: 100%;
+      margin-bottom: 31px;
+
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+
+    & textarea {
+      height: 104px;
+    }
   }
 }
 

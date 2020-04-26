@@ -7,4 +7,8 @@
   &::placeholder {
     color: $color-primary;
   }
+
+  &--popup {
+    padding: 16px 16px 17px 23px;
+  }
 }
