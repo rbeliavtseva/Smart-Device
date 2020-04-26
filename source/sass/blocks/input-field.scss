@@ -12,3 +12,9 @@
     padding: 16px 16px 17px 23px;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .input-field {
+    padding: 15px 16px 19px 18px;
+  }
+}

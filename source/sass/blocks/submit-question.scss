@@ -48,14 +48,23 @@
 
 .submit-question__checkbox {
   width: 50%;
+  padding-top: 3px;
 }
 
 @media (max-width: $tablet-max-width) {
   .submit-question {
     & textarea {
-      height: 160px;
-      padding: 14px 16px 19px 16px;
+      height: 159px;
+      padding: 17px 16px 19px 16px;
     }
+  }
+
+  .submit-question__wrap {
+    margin-top: 48px;
+  }
+
+  .submit-question__button {
+    width: calc(50% + 4px);
   }
 }
 
@@ -73,6 +82,8 @@
     }
 
     & textarea {
+      height: 104px;
+      padding-top: 14px;
       padding-bottom: 17px;
     }
   }
@@ -87,7 +98,7 @@
   .submit-question__button {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 29px;
+    margin-bottom: 27px;
   }
 
   .submit-question__checkbox {
