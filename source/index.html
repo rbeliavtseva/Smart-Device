@@ -144,25 +144,27 @@
           </div>
         </section>
         <section class="write-us">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <p class="write-us__heading">
-            Остались вопросы? Задайте их нам!
-            <span class="write-us__text-small">Мы проконсультируем Вас бесплатно</span>
-          </p>
-          <form class="write-us__form submit-question" method="POST">
-            <input type="text" name="name" value="" placeholder="Имя">
-            <input type="text" name="phone" value="" placeholder="Телефон">
-            <textarea rows="6" cols="30" name="question-text" placeholder="Ваш вопрос"></textarea>
-            <div class="submit-guestion__wrap">
-              <button class="submit-question__button button button--bordered" type="submit">Задать вопрос</button>
-              <div class="submit-question__checkbox">
-                <input type="checkbox" name="data" value="agree" id="data" checked="">
-                <label for="data">
-                  Я согласен на обработку  персональных данных
-                </label>
-              </div>
+          <div class="write-us__container">
+            <div class="write-us__container-inner">
+              <h2 class="visually-hidden">Форма обратной связи</h2>
+              <p class="write-us__heading">Остались вопросы? Задайте их нам!</p>
+              <p class="write-us__text-small">Мы проконсультируем Вас бесплатно</p>
+              <form class="write-us__form submit-question" method="POST">
+                <input type="text" name="name" value="" placeholder="Имя">
+                <input type="text" name="phone" value="" placeholder="Телефон">
+                <textarea rows="4" cols="30" name="question-text" placeholder="Ваш вопрос"></textarea>
+                <div class="submit-question__wrap">
+                  <button class="submit-question__button button button--bordered" type="submit">Задать вопрос</button>
+                  <div class="submit-question__checkbox checkbox">
+                    <input type="checkbox" name="data" value="agree" id="data" checked="">
+                    <label for="data">
+                      Я согласен на обработку  персональных данных
+                    </label>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </section>
       </main>
       <footer class="footer">

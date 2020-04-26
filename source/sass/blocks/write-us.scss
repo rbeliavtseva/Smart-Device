@@ -1,0 +1,136 @@
+.write-us {
+  position: relative;
+  background-color: $color-secondary;
+  color: $color-primary;
+
+  &::before {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    display: block;
+    content: "";
+    width: 265px;
+    height: 255px;
+    background-image: url("../../img/triangle-small-desktop@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    display: block;
+    content: "";
+    width: 343px;
+    height: 405px;
+    background-image: url("../../img/triangle-medium-desktop@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.write-us__container {
+  position: relative;
+  max-width: $desktop-aligner;
+  margin: 0 auto;
+  padding: 92px 140px 113px 130px;
+
+  &::before {
+    position: absolute;
+    top: -27%;
+    left: -77%;
+    display: block;
+    content: "";
+    width: 1920px;
+    height: 881px;
+    background-image: url("../../img/only-triangles-desktop@1x.png");
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 28px);
+    transform: translateY(-50%);
+    left: calc(5% + 5px);
+    display: block;
+    content: "";
+    width: 511px;
+    height: 288px;
+    background-image: url("../../img/paper-airplane-desktop@1x.png");
+  }
+}
+
+.write-us__container-inner {
+  width: 50%;
+  margin-left: auto;
+}
+
+.write-us__heading {
+  margin: 0 0 10px -4px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: inherit;
+}
+
+.write-us__text-small {
+  margin: 0 0 50px 0;
+}
+
+@media (max-width: $desktop-background-width) {
+  .write-us__container {
+    &::before {
+      top: -20%;
+      left: calc(-100% + 50px);
+    }
+
+    &::after {
+      top: calc(50% - 28px);
+      left: -30px;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .write-us {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .write-us__container {
+    padding: 80px 87px 103px 92px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .write-us__container-inner {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .write-us__heading {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .write-us__container {
+    padding: 30px 15px 42px 15px;
+  }
+
+  .write-us__heading {
+    margin-bottom: 13px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .write-us__text-small {
+    margin-bottom: 26px;
+  }
+}

@@ -79,8 +79,18 @@
     }
   }
 
+  @media (max-width: $tablet-max-width) {
+    &--bordered {
+      padding: 13px 26px 16px 26px;
+    }
+  }
+
   @media (max-width: $mobile-max-width) {
     padding: 19px 26px 19px;
+
+    &--bordered {
+      padding: 15px 26px;
+    }
 
     &--bordered-blue {
       padding: 11px 50px 15px 50px;
