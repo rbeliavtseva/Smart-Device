@@ -5,7 +5,7 @@
     position: absolute;
     z-index: -1;
     bottom: -50px;
-    left: -14%;
+    left: calc(-15% - 8px);
     content: "";
     width: 872px;
     height: 873px;
@@ -17,7 +17,7 @@
     position: absolute;
     z-index: -1;
     top: 100px;
-    left: 50%;
+    left: calc(50% + 35px);
     transform: translateX(-50%);
     content: "";
     width: 872px;
