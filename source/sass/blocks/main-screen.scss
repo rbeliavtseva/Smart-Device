@@ -5,8 +5,8 @@
                     url("../../img/start-desktop@1x.png"),
                     url("../../img/triangles-desktop@1x.png");
   background-position: 50% -85px,
-                       calc(100% - 177px) 130px,
-                       100% calc(100% + 10px);
+                       calc(100% - 177px) 173px,
+                       100% calc(100% + 5px);
   background-repeat: no-repeat;
   background-size: 100% 878px,
                    705px 515px,
@@ -20,75 +20,88 @@
                      705px auto,
                      1920px auto;
   }
+}
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: $desktop-aligner;
-    margin: 0 auto;
-    padding: 200px 10px 92px 10px;
+.main-screen__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $desktop-aligner;
+  margin: 0 auto;
+  padding: 230px 0 120px 0;
+}
+
+.main-screen__text-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.main-screen__product-name {
+  margin-bottom: 27px;
+  margin-left: -3px;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.main-screen__services {
+  position: relative;
+  margin: 0 0 43px 0;
+  padding-left: 94px;
+  font-size: 22px;
+  line-height: 34px;
+  color: inherit;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background-color: $color-primary;
+  }
+}
+
+.main-screen__button {
+  align-self: start;
+  margin-bottom: 120px;
+  margin-left: 93px;
+}
+
+.main-screen__button-rotate {
+  align-self: flex-start;
+  transform: rotate(-90deg) translateY(-60px);
+}
+
+.main-screen__btn-text {
+  &--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-aligner-with-padding) {
+  .main-screen__container {
+    padding: 230px 50px 92px 50px;
   }
 
-  &__text-wrap {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
+  .main-screen__text-wrap {
+    width: 60%;
   }
+}
 
-  &__product-name {
-    margin-bottom: 30px;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 80px;
-    line-height: 94px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: inherit;
-  }
-
-  &__services {
-    position: relative;
-    margin: 0 0 37px 0;
-    padding-left: 95px;
-    font-size: 22px;
-    line-height: 34px;
-    color: inherit;
-
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 13px;
-      content: "";
-      width: 66px;
-      height: 2px;
-      background-color: $color-primary;
-    }
-  }
-
-  &__button {
-    align-self: start;
-    margin-bottom: 93px;
-    margin-left: 95px;
-  }
-
-  &__button-rotate {
-    align-self: flex-start;
-    transform: rotate(-90deg) translateY(-60px);
-  }
-
-  &__btn-text {
-    &--mobile {
-      display: none;
-    }
-  }
-
-  @media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-max-width) {
+  .main-screen {
     background-image: url("../../img/background-tablet@1x.png"),
-                    url("../../img/start-tablet@1x.png"),
-                    url("../../img/triangles-tablet@1x.png");
+                      url("../../img/start-tablet@1x.png"),
+                      url("../../img/triangles-tablet@1x.png");
     background-position: 50% -74px,
-                       100% 57px,
-                       100% -74px;
+                         100% 43px,
+                         100% -70px;
     background-repeat: no-repeat;
     background-size: 100% 686px,
                      260px 340px,
@@ -99,101 +112,105 @@
                         url("../../img/start-tablet@2x.png"),
                         url("../../img/triangles-tablet@2x.png");
       background-size: 100% 686px,
-                      260px auto,
-                      770px auto;
-    }
-
-    &__container {
-      padding: 116px 100px 163px 100px;
-    }
-
-    &__text-wrap {
-      width: 70%;
-    }
-
-    &__product-name {
-      font-size: 60px;
-      line-height: 70px;
-    }
-
-    &__services {
-      padding-left: 50px;
-      font-size: 18px;
-      line-height: 28px;
-
-      &::before {
-        width: 33px;
-      }
-    }
-
-    &__button {
-      margin-left: 48px;
-      margin-bottom: 0;
-    }
-
-    &__button-rotate {
-      display: none;
+                       260px auto,
+                       770px auto;
     }
   }
 
-  @media (max-width: $mobile-max-width) {
+  .main-screen__container {
+    padding: 117px 100px 163px 90px;
+  }
+
+  .main-screen__text-wrap {
+    width: 70%;
+  }
+
+  .main-screen__product-name {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .main-screen__services {
+    margin-bottom: 55px;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      width: 33px;
+    }
+  }
+
+  .main-screen__button {
+    margin-left: 48px;
+    margin-bottom: 0;
+  }
+
+  .main-screen__button-rotate {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .main-screen {
     background-image: url("../../img/background-mobile@1x.png"),
-                    url("../../img/start-mobile@1x.png"),
-                    url("../../img/triangles-mobile@1x.png");
+                      url("../../img/start-mobile@1x.png"),
+                      url("../../img/triangles-mobile@1x.png");
     background-position: 50% -56px,
-                         100% 57px,
-                         100% -56px;
+                         100% 38px,
+                         100% -53px;
     background-repeat: no-repeat;
     background-size: 100% 647px,
-                     294px 220px,
-                     320px 529px;
+        294px 220px,
+        320px 529px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/background-mobile@2x.png"),
-                        url("../../img/start-mobile@2x.png"),
-                        url("../../img/triangles-mobile@2x.png");
-      background-size: 100% 647px,
-                       294px auto,
-                       320px auto;
+    background-image: url("../../img/background-mobile@2x.png"),
+                      url("../../img/start-mobile@2x.png"),
+                      url("../../img/triangles-mobile@2x.png");
+    background-size: 100% 647px,
+                     294px auto,
+                     320px auto;
+    }
+  }
+
+  .main-screen__container {
+    padding: 233px 15px 70px 17px;
+  }
+
+  .main-screen__text-wrap {
+    width: 100%;
+  }
+
+  .main-screen__product-name {
+    margin-bottom: 27px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .main-screen__services {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 25px;
+
+    &::before {
+      top: 15px;
+    }
+  }
+
+  .main-screen__button {
+    align-self: stretch;
+    margin-left: 0;
+  }
+
+  .main-screen__btn-text {
+    &--desktop {
+      display: none;
     }
 
-    &__container {
-      padding: 225px 15px 70px 15px;
-    }
-
-    &__text-wrap {
-      width: 100%;
-    }
-
-    &__product-name {
-      margin-bottom: 27px;
-      font-size: 40px;
-      line-height: 47px;
-    }
-
-    &__services {
-      margin-bottom: 43px;
-      font-size: 16px;
-      line-height: 25px;
-
-      &::before {
-        top: 15px;
-      }
-    }
-
-    &__button {
-      align-self: stretch;
-      margin-left: 0;
-    }
-
-    &__btn-text {
-      &--desktop {
-        display: none;
-      }
-
-      &--mobile {
-        display: block;
-      }
+    &--mobile {
+      display: block;
     }
   }
 }

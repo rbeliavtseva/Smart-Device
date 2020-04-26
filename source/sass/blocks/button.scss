@@ -47,6 +47,7 @@
   &--blue {
     display: inline-block;
     vertical-align: middle;
+    padding: 18px 45px;
     border: none;
     font-size: 16px;
     line-height: 19px;
@@ -70,6 +71,8 @@
   &--text {
     position: relative;
     border: none;
+    padding: 6px 26px 14px 24px;
+    display: block;
     font-family: "PT Mono", "Courier", monospace;
     text-transform: none;
     letter-spacing: normal;
@@ -82,6 +85,10 @@
   }
 
   @media (max-width: $tablet-max-width) {
+    &--blue {
+      padding: 18px 33px;
+    }
+
     &--bordered {
       padding: 13px 26px 16px 26px;
     }
@@ -89,6 +96,10 @@
 
   @media (max-width: $mobile-max-width) {
     padding: 19px 26px 19px;
+
+    &--blue {
+      padding: 18px 26px;
+    }
 
     &--bordered {
       padding: 15px 26px;

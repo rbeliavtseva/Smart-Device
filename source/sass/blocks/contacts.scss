@@ -29,7 +29,7 @@
   margin-left: 15px;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $desktop-aligner-with-padding) {
   .contacts__item {
     &:not(:last-child) {
       margin-right: 40px;

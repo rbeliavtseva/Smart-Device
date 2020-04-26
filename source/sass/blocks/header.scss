@@ -36,9 +36,9 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $desktop-aligner-with-padding) {
   .header {
-    padding: 18px 23px 0 25px;
+    padding: 33px 23px 0 25px;
   }
 }
 
