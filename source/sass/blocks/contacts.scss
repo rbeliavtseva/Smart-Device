@@ -2,52 +2,71 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 38px 0 auto;
+  margin: 0 49px 0 auto;
+}
 
-  @media (max-width: $tablet-max-width) {
-    margin: 0 0 0 auto;
-  }
+.contacts__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $color-primary;
 
-  &__item {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: $color-primary;
-
-    &:not(:last-child) {
-      margin-right: 88px;
-    }
-
-    @media (max-width: $tablet-max-width) {
-      &--email svg {
-        width: 25px;
-        height: 18px;
-      }
-
-      &--phone svg {
-        width: 24px;
-        height: 24px;
-      }
-
-      &:not(:last-child) {
-        margin-right: 33px;
-      }
-    }
-
-    @media (max-width: $mobile-max-width) {
-      &:not(:last-child) {
-        margin-right: 23px;
-      }
-    }
+  &:not(:last-child) {
+    margin-right: 90px;
   }
 }
 
 .contacts span {
-  margin-left: 10px;
   line-height: 18px;
   white-space: nowrap;
+}
 
-  @media (max-width: $tablet-max-width) {
+.contacts__email {
+  margin-left: 18px;
+}
+
+.contacts__phone {
+  margin-left: 15px;
+}
+
+@media (max-width: $desktop-width) {
+  .contacts__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .contacts {
+    margin: 0 0 0 auto;
+  }
+
+  .contacts__item {
+    &--email svg {
+      width: 25px;
+      height: 18px;
+    }
+
+    &--phone svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+  }
+
+  .contacts span {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .contacts__item {
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
   }
 }
