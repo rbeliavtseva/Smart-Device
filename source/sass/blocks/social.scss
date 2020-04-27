@@ -1,8 +1,19 @@
 .social {
   display: flex;
   list-style: none;
+}
 
-  &__item:not(:last-child) {
+.social__item {
+  &:not(:last-child) {
     margin-right: 14px;
   }
+}
+
+.social__link {
+  outline: none;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  opacity: 0.4;
 }
