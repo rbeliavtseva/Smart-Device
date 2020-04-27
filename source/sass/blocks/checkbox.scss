@@ -3,7 +3,6 @@
 
   & input {
     position: absolute;
-    display: none;
   }
 
   & label {
@@ -47,4 +46,9 @@
   background-image: url("../../img/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.checkbox input:hover + label,
+.checkbox input:focus + label {
+  opacity: 1;
 }

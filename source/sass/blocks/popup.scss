@@ -1,9 +1,8 @@
 .popup {
   position: fixed;
-  top: 20%;
+  top: 136px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
   width: 490px;
   margin: 0 auto;
   padding: 30px 25px 38px 40px;
@@ -11,7 +10,13 @@
   background-color: $color-secondary;
   color: $color-primary;
 
-  display: none;
+  &--open {
+    display: flex;
+  }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .popup__heading {

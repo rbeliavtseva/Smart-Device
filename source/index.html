@@ -156,7 +156,7 @@
                 <div class="submit-question__wrap">
                   <button class="submit-question__button button button--bordered" type="submit">Задать вопрос</button>
                   <div class="submit-question__checkbox checkbox">
-                    <input type="checkbox" name="data" value="agree" id="data" checked="">
+                    <input  class="visually-hidden" type="checkbox" name="data" value="agree" id="data" checked>
                     <label for="data">
                       Я согласен на обработку персональных данных
                     </label>
@@ -166,7 +166,7 @@
             </div>
           </div>
         </section>
-        <div class="popup">
+        <div class="popup popup--closed">
           <div class="popup__container">
             <h2 class="popup__heading">Закажите звонок</h2>
             <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -177,7 +177,7 @@
               <div class="popup__wrap">
                 <button class="popup__button button button--bordered" type="submit">Отправить</button>
                 <div class="popup__checkbox checkbox checkbox--popup">
-                  <input type="checkbox" name="data" value="agree" id="data-popup" checked="">
+                  <input  class="visually-hidden" type="checkbox" name="data" value="agree" id="data-popup" checked>
                   <label for="data-popup">
                     Я согласен на обработку персональных данных
                   </label>
@@ -187,6 +187,7 @@
           </div>
           <button class="popup__button-close button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </div>
+        <div class="overlay"></div>
       </main>
       <footer class="footer">
         <div class="footer__wrapper">
