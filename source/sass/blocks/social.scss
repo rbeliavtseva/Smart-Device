@@ -1,11 +1,8 @@
 .social {
   display: flex;
-  margin: 0;
-  padding: 0;
   list-style: none;
 
   &__item:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 14px;
   }
 }
-

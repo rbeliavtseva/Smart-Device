@@ -1,68 +1,96 @@
 .copyright {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: $desktop-aligner;
   margin: 0 auto;
-  padding: 14px 20px;
-  border-top: 1px solid $color-border;
+  padding: 14px 0;
   font-size: 13px;
   line-height: 24px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-tertiary-light;
 
-  &__rights {
-    margin-right: 60px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -2000px;
+    content: "";
+    display: block;
+    width: 5000px;
+    height: 1px;
+    background-color: $color-border;
+  }
+}
+
+.copyright__rights {
+  margin-right: 64px;
+}
+
+.copyright__year {
+  white-space: nowrap;
+}
+
+.copyright__wrap-right {
+  display: flex;
+  justify-content: space-between;
+  width: calc(50% + 108px);
+}
+
+@media (max-width: $desktop-aligner-with-padding) {
+  .copyright  {
+    padding: 14px 27px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .copyright {
+    padding: 23px 25px 24px 27px;
   }
 
-  &__year {
-    white-space: nowrap;
+  .copyright__rights {
+    display: none;
   }
 
-  &__wrap-right {
-    display: flex;
-    justify-content: space-between;
-    width: calc(50% + 108px);
+  .copyright__year {
+    position: absolute;
+    top: -350px;
+    left: calc(50% + 60px);
+    transform: translateX(-50%);
   }
 
-  @media (max-width: $tablet-max-width) {
-    padding: 21px 27px 24px 27px;
+  .copyright__wrap-right {
+    width: 100%;
+  }
+}
 
-    &__rights {
-      display: none;
-    }
-
-    &__year {
-      position: absolute;
-      top: 35px;
-      left: calc(50% + 50px);
-      transform: translateX(-50%);
-    }
-
-    &__wrap-right {
-      width: 100%;
-    }
+@media (max-width: $mobile-max-width) {
+  .copyright {
+    padding: 30px 25px 24px 27px;
   }
 
-  @media (max-width: $mobile-max-width) {
-    &__year {
-      position: absolute;
-      top: 124px;
-      left: calc(50%);
-      transform: translateX(-50%);
-    }
+  .copyright__year {
+    position: absolute;
+    top: 124px;
+    left: calc(50%);
+    transform: translateX(-50%);
+  }
 
-    &__wrap-right {
-      flex-direction: column;
-      justify-content: center;
-      align-self: center;
-      width: 100%;
-    }
+  .copyright__wrap-right {
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+  }
 
-    &__developer,
-    &__conditions {
-      text-align: center;
-    }
+  .copyright__conditions {
+    margin-bottom: 20px;
+  }
+
+  .copyright__developer,
+  .copyright__conditions {
+    text-align: center;
   }
 }

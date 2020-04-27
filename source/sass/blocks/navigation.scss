@@ -1,73 +1,80 @@
 .navigation {
-  width: 50%;
+  width: calc(54% + 5px);
+  margin-left: auto;
   display: flex;
   flex-direction: column;
+}
 
-  &__heading {
-    margin: 0 0 25px 0;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 15px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $color-tertiary;
+.navigation__heading {
+  margin: 0 0 25px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-tertiary;
+}
+
+.navigation__list {
+  width: 91%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color-tertiary-light;
+  list-style: none;
+  columns: 2;
+}
+
+.navigation__list-item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media (max-width: $tablet-max-width) {
+  .navigation {
+    padding: 38px 0 35px 25px;
   }
 
-  &__list {
+  .navigation__heading {
     margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 25px;
-    color: $color-tertiary-light;
-    list-style: none;
-    columns: 2;
   }
 
-  & li {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
+  .navigation__list {
+    padding-top: 26px;
+    columns: 1;
   }
 
-  @media (max-width: $tablet-max-width) {
-    padding: 35px 0 35px 25px;
-
-    &__heading {
-      margin: 0;
-    }
-
-    &__list {
-      padding-top: 30px;
-      columns: 1;
-    }
-
-    & li {
-      display: block;
-      width: auto;
-    }
+  .navigation__list-item {
+    display: block;
+    width: auto;
   }
+}
 
-  @media (max-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) {
+  .navigation {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding: 25px 15px 25px 15px;
+    padding: 28px 15px;
     border-bottom: 1px solid $color-border;
+  }
 
-    &__button {
-      margin-left: auto;
+  .navigation__button {
+    margin-left: auto;
 
-      &--no-js {
-        display: none;
-      }
-    }
-
-    &__list {
+    &--no-js {
       display: none;
-      width: 100%;
+    }
+  }
 
-      &--no-js {
-        display: block;
-      }
+  .navigation__list {
+    display: none;
+    width: 100%;
+
+    &--no-js {
+      display: block;
     }
   }
 }
