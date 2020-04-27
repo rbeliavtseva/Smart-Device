@@ -1,16 +1,13 @@
 .submit-question {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
 
   & input {
     width: calc((100% - 31px) / 2);
     margin-bottom: 40px;
-
-    &:first-child {
-      margin-right: 31px;
-    }
   }
 
   &--popup {

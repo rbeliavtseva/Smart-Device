@@ -37,6 +37,7 @@
   padding: 41px 40px 65px 43px;
   border: 1px solid $color-border-light;
   background-color: $color-primary;
+  cursor: pointer;
 
   &--confidential,
   &--cost {

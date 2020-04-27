@@ -47,7 +47,13 @@
 
 @media (max-width: $tablet-max-width) {
   .copyright {
+    position: static;
     padding: 23px 25px 24px 27px;
+    border-top: 1px solid $color-border;
+
+    &::before {
+      display: none;
+    }
   }
 
   .copyright__rights {
@@ -56,7 +62,7 @@
 
   .copyright__year {
     position: absolute;
-    top: -350px;
+    top: 35px;
     left: calc(50% + 60px);
     transform: translateX(-50%);
   }
@@ -74,7 +80,7 @@
   .copyright__year {
     position: absolute;
     top: 124px;
-    left: calc(50%);
+    left: 50%;
     transform: translateX(-50%);
   }
 
