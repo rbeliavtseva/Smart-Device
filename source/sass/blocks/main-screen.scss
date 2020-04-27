@@ -90,7 +90,11 @@
   }
 
   .main-screen__text-wrap {
-    width: 60%;
+    width: 70%;
+  }
+
+  .main-screen__services {
+    padding-right: 125px;
   }
 }
 
@@ -121,10 +125,6 @@
     padding: 117px 100px 163px 90px;
   }
 
-  .main-screen__text-wrap {
-    width: 70%;
-  }
-
   .main-screen__product-name {
     margin-bottom: 30px;
     font-size: 60px;
@@ -134,6 +134,7 @@
   .main-screen__services {
     margin-bottom: 55px;
     padding-left: 50px;
+    padding-right: 0;
     font-size: 18px;
     line-height: 28px;
 
