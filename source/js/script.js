@@ -106,3 +106,18 @@ if (window.localStorage) {
     })(elements[i]);
   }
 }
+
+/*
+Реализует плавный скролл
+*/
+var opt = {
+  behavior: 'smooth'
+};
+
+document.querySelector('.main-screen__button-rotate').addEventListener('click', function () {
+  document.querySelector('.advantages').scrollIntoView(opt);
+});
+
+document.querySelector('.main-screen__button').addEventListener('click', function () {
+  document.querySelector('.write-us').scrollIntoView(opt);
+});
