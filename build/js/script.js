@@ -4,10 +4,9 @@
 Реализует аккордеон
 */
 var acc = document.querySelectorAll('.button-show');
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function (evt) {
+for (var item = 0; item < acc.length; item++) {
+  acc[item].addEventListener('click', function (evt) {
     var button = evt.target;
     button.classList.toggle('button-show--active');
     var panel = button.nextElementSibling;
@@ -64,3 +63,22 @@ closeBtn.addEventListener('click', closePopup);
 */
 window.iMaskJS(document.getElementById('tel-id'), {mask: '+{7}(000)-000-00-00'});
 window.iMaskJS(document.getElementById('tel-id-popup'), {mask: '+{7}(000)-000-00-00'});
+
+/*
+Добавление в local storage
+*/
+if (window.localStorage) {
+  var elements = document.querySelectorAll('.input-field--popup');
+
+  for (var i = 0, length = elements.length; i < length; i++) {
+    (function (element) {
+      var name = element.getAttribute('name');
+
+      element.value = localStorage.getItem(name) || element.value;
+
+      element.onkeyup = function () {
+        localStorage.setItem(name, element.value);
+      };
+    })(elements[i]);
+  }
+}
