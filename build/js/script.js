@@ -27,7 +27,18 @@ var closeBtn = document.querySelector('.popup__button-close');
 var popup = document.querySelector('.popup');
 var overlay = document.querySelector('.overlay');
 var textInputs = document.querySelectorAll('.input-field--popup');
+var body = document.querySelector('body');
 
+// Блокировка скролла при открытии модального окна
+function existVerticalScroll() {
+  return document.body.offsetHeight > window.innerHeight;
+}
+
+function getBodyScrollTop() {
+  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
+}
+
+// Закрытие по нажатию ESC
 var onPopupEscPress = function (evt) {
   if (evt.keyCode === ESC_KEYCODE) {
     closePopup();
@@ -38,22 +49,35 @@ var focusMethod = function getFocus() {
   textInputs[0].focus();
 };
 
-var openPopup = function () {
+var openPopup = function (evt) {
+  evt.preventDefault();
+  body.dataset.scrollY = getBodyScrollTop();
   popup.classList.remove('popup--closed');
   popup.classList.add('popup--open');
   overlay.style.display = 'block';
   focusMethod();
   document.addEventListener('keydown', onPopupEscPress);
   overlay.addEventListener('click', closePopup);
+
+  if (existVerticalScroll()) {
+    body.classList.add('body-lock');
+    body.style.top = '-${body.dataset.scrollY}px';
+  }
 };
 
 headerBtn.addEventListener('click', openPopup);
 
-var closePopup = function () {
+var closePopup = function (evt) {
+  evt.preventDefault();
   popup.classList.remove('popup--open');
   popup.classList.add('popup--closed');
   overlay.style.display = 'none';
   document.removeEventListener('keydown', onPopupEscPress);
+
+  if (existVerticalScroll()) {
+    body.classList.remove('body-lock');
+    window.scrollTo(0, body.dataset.scrollY);
+  }
 };
 
 closeBtn.addEventListener('click', closePopup);
