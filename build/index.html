@@ -210,7 +210,7 @@
               <h2 class="visually-hidden">Форма обратной связи</h2>
               <p class="write-us__heading">Остались вопросы? Задайте их нам!</p>
               <p class="write-us__text-small">Мы проконсультируем Вас бесплатно</p>
-              <form class="write-us__form submit-question" action="https://echo.htmlacademy.ru" method="POST">
+              <form class="submit-question" action="https://echo.htmlacademy.ru" method="POST">
                 <input class="input-field" type="text" name="name" value="" placeholder="Имя">
                 <input class="input-field" id="tel-id" type="tel" name="phone" value="" placeholder="Телефон">
                 <textarea class="textarea" rows="4" cols="30" name="question-text" placeholder="Ваш вопрос"></textarea>
@@ -228,10 +228,10 @@
           </div>
         </section>
         <div class="popup popup--closed">
-          <div class="popup__container">
+          <div>
             <h2 class="popup__heading">Закажите звонок</h2>
             <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-            <form class="popup__form submit-question submit-question--popup" method="POST">
+            <form class="submit-question submit-question--popup" method="POST">
               <input class="input-field input-field--popup" type="text" name="name" value="" placeholder="Имя">
               <input class="input-field input-field--popup" id="tel-id-popup" type="tel" name="phone" value="" placeholder="Телефон">
               <textarea class="textarea itextarea--popup" rows="4" cols="30" name="question-text" placeholder="Ваш вопрос"></textarea>
@@ -305,7 +305,7 @@
             </nav>
             <div class="contact-info">
               <h2 class="contact-info__heading">Наш офис</h2>
-              <button type="button" class="contact-info__button button-show"><span class="visually-hidden">Показать адрес и телефон</span></button>
+              <button class="contact-info__button button-show" type="button"><span class="visually-hidden">Показать адрес и телефон</span></button>
               <div class="contact-info__wrap">
                 <p>г. Мытищи, Олимпийский проспект, д.10</p>
                 <p>+7 (495) 589-40-50</p>
@@ -316,7 +316,7 @@
           </div>
         </div>
         <div class="copyright">
-          <div class="copyright__wrap-left">
+          <div>
             <span class="copyright__rights">Все права защищены</span>
             <span class="copyright__year">1999-2018 SD Service Devices</span>
           </div>
