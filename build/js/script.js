@@ -67,8 +67,7 @@ var openPopup = function (evt) {
 
 headerBtn.addEventListener('click', openPopup);
 
-var closePopup = function (evt) {
-  evt.preventDefault();
+var closePopup = function () {
   popup.classList.remove('popup--open');
   popup.classList.add('popup--closed');
   overlay.style.display = 'none';
