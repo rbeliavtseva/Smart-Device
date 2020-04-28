@@ -85,8 +85,12 @@ closeBtn.addEventListener('click', closePopup);
 /*
 Валидация поля input с помощью imaskjs
 */
-window.iMaskJS(document.getElementById('tel-id'), {mask: '+{7}(000)-000-00-00'});
-window.iMaskJS(document.getElementById('tel-id-popup'), {mask: '+{7}(000)-000-00-00'});
+var mask = {
+  mask: '+{7}(000)-000-00-00'
+};
+
+window.iMaskJS(document.getElementById('tel-id'), mask);
+window.iMaskJS(document.getElementById('tel-id-popup'), mask);
 
 /*
 Добавление в local storage
