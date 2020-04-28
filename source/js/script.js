@@ -4,17 +4,29 @@
 Реализует аккордеон
 */
 var acc = document.querySelectorAll('.button-show');
+var lastOpenAccPanel = null;
+var lastClickedButton = null;
 
 for (var item = 0; item < acc.length; item++) {
   acc[item].addEventListener('click', function (evt) {
     var button = evt.target;
     button.classList.toggle('button-show--active');
     var panel = button.nextElementSibling;
+
+    if (lastOpenAccPanel && lastOpenAccPanel !== panel) {
+      lastOpenAccPanel.style.display = 'none';
+    }
+    if (lastClickedButton && lastClickedButton !== button && lastClickedButton.classList.contains('button-show--active')) {
+      lastClickedButton.classList.toggle('button-show--active');
+    }
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
     } else {
       panel.style.display = 'block';
     }
+
+    lastOpenAccPanel = panel;
+    lastClickedButton = button;
   });
 }
 
