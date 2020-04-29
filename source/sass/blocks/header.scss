@@ -3,13 +3,13 @@
   justify-content: space-between;
   padding: 33px 0 0 0;
   background-color: $color-tertiary;
-  background-image: url("../../img/background-desktop@1x.jpg");
+  background-image: url("../img/background-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 878px;
   background-position: 50% 0px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/background-desktop@2x.jpg");
+    background-image: url("../img/background-desktop@2x.jpg");
     background-size: 100% 878px;
   }
 }
@@ -46,16 +46,16 @@
   .header {
     padding: 18px 23px 0 25px;
     background-image:
-                      url("../../img/triangles-tablet@1x.png"),
-                      url("../../img/background-tablet@1x.jpg");
+                      url("../img/triangles-tablet@1x.png"),
+                      url("../img/background-tablet@1x.jpg");
     background-size: 770px 563px,
                      100% 686px;
     background-position: 100% 0,
                          50% 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/triangles-tablet@2x.png"),
-                        url("../../img/background-tablet@2x.jpg");
+      background-image: url("../img/triangles-tablet@2x.png"),
+                        url("../img/background-tablet@2x.jpg");
       background-size: 770px auto,
                        100% 686px;
     }
@@ -69,16 +69,16 @@
 @media (max-width: $mobile-max-width) {
   .header {
     padding: 15px 15px 0 18px;
-    background-image: url("../../img/triangles-mobile@1x.png"),
-                      url("../../img/background-mobile@1x.jpg");
+    background-image: url("../img/triangles-mobile@1x.png"),
+                      url("../img/background-mobile@1x.jpg");
     background-size: 320px 529px,
                      100% 647px;
     background-position: 100% 0,
                          50% 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/triangles-mobile@2x.png"),
-                        url("../../img/background-mobile@2x.jpg");
+      background-image: url("../img/triangles-mobile@2x.png"),
+                        url("../img/background-mobile@2x.jpg");
       background-size: 320px auto,
                        100% 647px;
     }

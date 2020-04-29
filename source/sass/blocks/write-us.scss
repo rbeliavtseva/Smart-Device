@@ -11,7 +11,7 @@
     content: "";
     width: 265px;
     height: 255px;
-    background-image: url("../../img/triangle-small-desktop@1x.png");
+    background-image: url("../img/triangle-small-desktop@1x.png");
     background-repeat: no-repeat;
   }
 
@@ -23,18 +23,18 @@
     content: "";
     width: 343px;
     height: 405px;
-    background-image: url("../../img/triangle-medium-desktop@1x.png");
+    background-image: url("../img/triangle-medium-desktop@1x.png");
     background-repeat: no-repeat;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::before {
-      background-image: url("../../img/triangle-small-desktop@2x.png");
+      background-image: url("../img/triangle-small-desktop@2x.png");
       background-size: 265px auto;
     }
 
     &::after {
-      background-image: url("../../img/triangle-medium-desktop@2x.png");
+      background-image: url("../img/triangle-medium-desktop@2x.png");
       background-size: 343px auto;
     }
   }
@@ -54,7 +54,7 @@
     content: "";
     width: 1920px;
     height: 881px;
-    background-image: url("../../img/only-triangles-desktop@1x.png");
+    background-image: url("../img/only-triangles-desktop@1x.png");
   }
 
   &::after {
@@ -66,17 +66,17 @@
     content: "";
     width: 511px;
     height: 288px;
-    background-image: url("../../img/paper-airplane-desktop@1x.png");
+    background-image: url("../img/paper-airplane-desktop@1x.png");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::before {
-      background-image: url("../../img/only-triangles-desktop@2x.png");
+      background-image: url("../img/only-triangles-desktop@2x.png");
       background-size: 1920px auto;
     }
 
     &::after {
-      background-image: url("../../img/paper-airplane-desktop@2x.png");
+      background-image: url("../img/paper-airplane-desktop@2x.png");
       background-size: 511px auto;
     }
   }

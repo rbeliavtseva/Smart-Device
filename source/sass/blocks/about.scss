@@ -19,13 +19,13 @@
     left: -30px;
     width: 220px;
     height: 317px;
-    background-image: url("../../img/year-desktop@1x.png");
+    background-image: url("../img/year-desktop@1x.png");
     background-repeat: no-repeat;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::before {
-      background-image: url("../../img/year-desktop@2x.png");
+      background-image: url("../img/year-desktop@2x.png");
       background-size: 220px auto;
     }
   }
@@ -79,13 +79,13 @@
       left: -30px;
       width: 244px;
       height: 362px;
-      background-image: url("../../img/year-tablet@1x.png");
+      background-image: url("../img/year-tablet@1x.png");
       background-repeat: no-repeat;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       &::before {
-        background-image: url("../../img/year-tablet@2x.png");
+        background-image: url("../img/year-tablet@2x.png");
         background-size: 244px auto;
       }
     }

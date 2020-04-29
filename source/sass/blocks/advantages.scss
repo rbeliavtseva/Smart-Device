@@ -10,13 +10,13 @@
     content: "";
     width: 298px;
     height: 298px;
-    background-image: url("../../img/triangle-desktop@1x.png");
+    background-image: url("../img/triangle-desktop@1x.png");
     transform: rotate(180deg);
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::after {
-      background-image: url("../../img/triangle-desktop@2x.png");
+      background-image: url("../img/triangle-desktop@2x.png");
       background-size: 298px auto;
     }
   }
@@ -71,12 +71,12 @@
       content: "";
       width: 298px;
       height: 298px;
-      background-image: url("../../img/triangle-desktop@1x.png");
+      background-image: url("../img/triangle-desktop@1x.png");
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       &::after {
-        background-image: url("../../img/triangle-desktop@2x.png");
+        background-image: url("../img/triangle-desktop@2x.png");
         background-size: 298px auto;
       }
     }
