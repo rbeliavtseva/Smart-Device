@@ -8,6 +8,10 @@
   & input {
     width: calc((100% - 31px) / 2);
     margin-bottom: 40px;
+
+    &:first-child {
+      margin-right: auto;
+    }
   }
 
   &--popup {
@@ -41,6 +45,14 @@
 }
 
 @media (max-width: $tablet-max-width) {
+  .submit-question {
+    & input {
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+
   .submit-question__wrap {
     margin-top: 48px;
   }
@@ -68,7 +80,7 @@
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    margin: 30px auto 0 auto;
+    margin: 29px auto 0 auto;
   }
 
   .submit-question__button {

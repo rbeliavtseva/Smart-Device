@@ -22,3 +22,9 @@
     padding: 15px 16px 19px 18px;
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .input-field {
+    padding: 14px 16px 19px 16px;
+  }
+}

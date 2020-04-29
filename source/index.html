@@ -32,14 +32,13 @@
           </div>
           <div class="header__container-inner header__container-inner--right">
             <div class="contacts">
-              <a class="contacts__item contacts__item--email" href="mailto:info@sd.ru">
+              <a class="contacts__item contacts__item--email" href="mailto:info@sd.ru" aria-label="Написать нам">
                 <svg width="19" height="14">
                   <use xlink:href="#icon-envelope"></use>
                 </svg>
-                <span class="visually-hidden">Email</span>
                 <span class="contacts__email">info@sd.ru</span>
               </a>
-              <a class="contacts__item contacts__item--phone" href="tel:84950005252">
+              <a class="contacts__item contacts__item--phone" href="tel:84950005252" aria-label="Позвонить нам">
                 <svg width="18" height="18">
                   <use xlink:href="#icon-phone-call"></use>
                 </svg>
@@ -122,6 +121,7 @@
                   Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
                   Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span class="about__desktop-only">(РЖД),
                   РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+                  <span class="about__dots">..</span>
                 </p>
               </div>
               <a class="about__button button button--bordered-blue" href="#">Подробнее</a>
@@ -177,7 +177,7 @@
           </div>
         </section>
         <div class="popup popup--closed">
-          <div>
+          <div class="popup__container">
             <h2 class="popup__heading">Закажите звонок</h2>
             <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
             <form class="submit-question submit-question--popup" action="https://echo.htmlacademy.ru" method="POST">
