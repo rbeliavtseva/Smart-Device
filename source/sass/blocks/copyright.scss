@@ -6,7 +6,7 @@
   width: 100%;
   max-width: $desktop-aligner;
   margin: 0 auto;
-  padding: 14px 0;
+  padding: 15px 0;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -48,7 +48,7 @@
 @media (max-width: $tablet-max-width) {
   .copyright {
     position: static;
-    padding: 23px 25px 24px 27px;
+    padding: 22px 25px 24px 27px;
     border-top: 1px solid $color-border;
 
     &::before {
@@ -74,12 +74,12 @@
 
 @media (max-width: $mobile-max-width) {
   .copyright {
-    padding: 30px 25px 24px 27px;
+    padding: 29px 25px 24px 27px;
   }
 
   .copyright__year {
     position: absolute;
-    top: 124px;
+    top: 125px;
     left: 50%;
     transform: translateX(-50%);
   }

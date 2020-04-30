@@ -35,6 +35,14 @@
   color: $color-text-logo;
 }
 
+@media (max-width: $tablet-max-width) {
+  .logo__text-wrap {
+    &--footer {
+      margin-left: 15px;
+    }
+  }
+}
+
 @media (max-width: $mobile-max-width) {
   .logo {
     &--footer {

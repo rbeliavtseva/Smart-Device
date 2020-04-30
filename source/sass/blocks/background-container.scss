@@ -9,7 +9,7 @@
     content: "";
     width: 872px;
     height: 873px;
-    background-image: url("../img/triangle-big-desktop@1x.png");
+    background-image: url("../img/triangle-big.svg");
     transform: rotate(180deg);
   }
 
@@ -22,15 +22,7 @@
     content: "";
     width: 872px;
     height: 873px;
-    background-image: url("../img/triangle-big-desktop@1x.png");
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    &::before,
-    &::after {
-      background-image: url("../img/triangle-big-desktop@2x.png");
-      background-size: 872px auto;
-    }
+    background-image: url("../img/triangle-big.svg");
   }
 
   @media (max-width: $tablet-max-width) {
@@ -39,13 +31,14 @@
     }
 
     &::after {
-      left: 85%;
+      top: 90px;
+      left: 84%;
     }
   }
 
   @media (max-width: $mobile-max-width) {
     &::after {
-      top: calc(36% - 6px);
+      top: calc(36% + 4px);
       left: calc(100% - 3px);
     }
   }

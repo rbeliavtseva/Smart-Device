@@ -7,7 +7,7 @@
 
   & label {
     position: relative;
-    padding-left: 33px;
+    padding-left: 32px;
     font-size: 14px;
     line-height: 16px;
     color: inherit;
@@ -39,7 +39,7 @@
   content: "";
   position: absolute;
   top: 6px;
-  left: 4px;
+  left: 5px;
   display: block;
   width: 8px;
   height: 5px;
@@ -51,4 +51,12 @@
 .checkbox input:hover + label,
 .checkbox input:focus + label {
   opacity: 1;
+}
+
+@media (max-width: $tablet-max-width) {
+  .checkbox {
+    & label {
+      padding-left: 34px;
+    }
+  }
 }

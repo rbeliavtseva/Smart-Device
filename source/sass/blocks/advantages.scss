@@ -10,15 +10,8 @@
     content: "";
     width: 298px;
     height: 298px;
-    background-image: url("../img/triangle-desktop@1x.png");
+    background-image: url("../img/triangle.svg");
     transform: rotate(180deg);
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    &::after {
-      background-image: url("../img/triangle-desktop@2x.png");
-      background-size: 298px auto;
-    }
   }
 }
 
@@ -71,14 +64,7 @@
       content: "";
       width: 298px;
       height: 298px;
-      background-image: url("../img/triangle-desktop@1x.png");
-    }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      &::after {
-        background-image: url("../img/triangle-desktop@2x.png");
-        background-size: 298px auto;
-      }
+      background-image: url("../img/triangle.svg");
     }
   }
 
@@ -156,10 +142,18 @@
 
   .advantages__item {
     width: 100%;
-    padding: 25px 18px 23px 27px;
+    padding: 23px 18px 23px 27px;
 
     &--providers {
-      padding-right: 12px;
+      padding: 23px 12px 23px 27px;
+    }
+
+    &--cost {
+      padding: 23px 18px 26px 28px;
+    }
+
+    &--confidential {
+      padding: 25px 18px 33px 28px;
     }
 
     &:nth-child(odd) {
@@ -171,9 +165,32 @@
     }
 
     & h3 {
-      margin: 3px 0 10px 0;
+      margin: 6px 0 11px 0;
       font-size: 20px;
       line-height: 28px;
+    }
+
+    .advantages__item-heading{
+      &--providers {
+        margin: 9px 0 11px 0;
+      }
+    }
+  }
+
+  .advantages__item-icon {
+    &--providers {
+      width: 31px;
+      height: 32px;
+    }
+
+    &--confidential {
+      width: 30px;
+      height: 26px;
+    }
+
+    &--cost {
+      width: 32px;
+      height: 32px;
     }
   }
 }

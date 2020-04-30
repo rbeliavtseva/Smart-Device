@@ -31,7 +31,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 42px;
+  margin-top: 41px;
 }
 
 .submit-question__button {
@@ -54,11 +54,15 @@
   }
 
   .submit-question__wrap {
-    margin-top: 48px;
+    margin-top: 45px;
   }
 
   .submit-question__button {
     width: calc(50% + 4px);
+  }
+
+  .submit-question__checkbox {
+    padding-top: 1px;
   }
 }
 

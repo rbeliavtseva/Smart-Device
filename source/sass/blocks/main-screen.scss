@@ -3,20 +3,23 @@
   background-color: $color-tertiary;
   background-image:
                     url("../img/start-desktop@1x.png"),
-                    url("../img/triangles-desktop@1x.png"),
-                    url("../img/background-desktop@1x.jpg");
+                    url("../img/triangles.svg"),
+                    url("../img/ellipse-desktop@1x.png"),
+                    url("../img/background-desktop@1x.png");
   background-position: calc(100% - 177px) 173px,
-                       100% calc(100% + 5px),
+                       calc(100% + 853px) -25px,
+                       100% -85px,
                        50% -85px;
   background-repeat: no-repeat;
   background-size: 705px 515px,
+                   1920px 881px,
                    1920px 881px,
                    100% 878px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/start-desktop@2x.png"),
-                      url("../img/triangles-desktop@2x.png"),
-                      url("../img/background-desktop@2x.jpg");
+                      url("../img/ellipse-desktop@1x.png"),
+                      url("../img/background-desktop@2x.png");
     background-size: 705px auto,
                      1920px auto,
                      100% 878px;
@@ -103,10 +106,10 @@
   .main-screen {
     background-image: url("../img/start-tablet@1x.png"),
                       url("../img/triangles-tablet@1x.png"),
-                      url("../img/background-tablet@1x.jpg");
-    background-position: 100% 43px,
-                         100% -70px,
-                         50% -74px;
+                      url("../img/background-tablet@1x.png");
+    background-position: calc(100% + 2px) 43px,
+                         calc(100% + 2px) -71px,
+                         50% -71px;
     background-repeat: no-repeat;
     background-size: 260px 340px,
                      770px 563px,
@@ -115,7 +118,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/start-tablet@2x.png"),
                         url("../img/triangles-tablet@2x.png"),
-                        url("../img/background-tablet@2x.jpg");
+                        url("../img/background-tablet@2x.png");
       background-size: 260px auto,
                        770px auto,
                        100% 686px;
@@ -127,7 +130,7 @@
   }
 
   .main-screen__product-name {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     font-size: 60px;
     line-height: 70px;
   }
@@ -158,7 +161,7 @@
   .main-screen {
     background-image: url("../img/start-mobile@1x.png"),
                       url("../img/triangles-mobile@1x.png"),
-                      url("../img/background-mobile@1x.jpg");
+                      url("../img/background-mobile@1x.png");
     background-position: 100% 38px,
                          100% -53px,
                          50% -56px;
@@ -170,7 +173,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/start-mobile@2x.png"),
                       url("../img/triangles-mobile@2x.png"),
-                      url("../img/background-mobile@2x.jpg"),;
+                      url("../img/background-mobile@2x.png"),;
     background-size: 294px auto,
                      320px auto,
                      100% 647px;
