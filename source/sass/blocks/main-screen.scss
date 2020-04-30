@@ -18,9 +18,11 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/start-desktop@2x.png"),
+                      url("../img/triangles.svg"),
                       url("../img/ellipse-desktop@1x.png"),
                       url("../img/background-desktop@2x.png");
     background-size: 705px auto,
+                     1920px 881px,
                      1920px auto,
                      100% 878px;
   }
