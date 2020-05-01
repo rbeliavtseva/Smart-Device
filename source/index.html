@@ -157,11 +157,11 @@
               <p class="write-us__heading">Остались вопросы? Задайте их нам!</p>
               <p class="write-us__text-small">Мы проконсультируем Вас бесплатно</p>
               <form class="submit-question" action="https://echo.htmlacademy.ru" method="POST">
-                <input class="input-field" type="text" name="name" value="" id="name-id" placeholder="Имя">
+                <input class="input-field" type="text" name="name" value="" id="name-id" placeholder="Имя" required>
                 <label class="visually-hidden" for="name-id">Введите имя</label>
-                <input class="input-field" id="tel-id" type="tel" name="phone" value="" placeholder="Телефон">
+                <input class="input-field" id="tel-id" type="tel" name="phone" value="" placeholder="Телефон" required>
                 <label class="visually-hidden" for="tel-id">Введите телефон</label>
-                <textarea class="textarea" rows="4" cols="30" name="question-text" id="question-id" placeholder="Ваш вопрос"></textarea>
+                <textarea class="textarea" rows="4" cols="30" name="question-text" id="question-id" placeholder="Ваш вопрос" required></textarea>
                 <label class="visually-hidden" for="question-id">Введите ваш вопрос</label>
                 <div class="submit-question__wrap">
                   <button class="submit-question__button button button--bordered" type="submit">Задать вопрос</button>
@@ -181,9 +181,9 @@
             <h2 class="popup__heading">Закажите звонок</h2>
             <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
             <form class="submit-question submit-question--popup" action="https://echo.htmlacademy.ru" method="POST">
-              <input class="input-field input-field--popup" type="text" name="name" value="" placeholder="Имя">
-              <input class="input-field input-field--popup" id="tel-id-popup" type="tel" name="phone" value="" placeholder="Телефон">
-              <textarea class="textarea textarea--popup" rows="4" cols="30" name="question-text" placeholder="Ваш вопрос"></textarea>
+              <input class="input-field input-field--popup" type="text" name="name" value="" placeholder="Имя" required>
+              <input class="input-field input-field--popup" id="tel-id-popup" type="tel" name="phone" value="" placeholder="Телефон" required>
+              <textarea class="textarea textarea--popup" rows="4" cols="30" name="question-text" placeholder="Ваш вопрос" required></textarea>
               <div class="popup__wrap">
                 <button class="popup__button button button--bordered" type="submit">Отправить</button>
                 <div class="popup__checkbox checkbox checkbox--popup">
