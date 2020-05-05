@@ -130,7 +130,6 @@ initSmoothScrolling();
 
 function initSmoothScrolling() {
   if (isCssSmoothSCrollSupported()) {
-    console.log('scroll');
     return;
   }
 
