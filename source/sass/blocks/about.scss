@@ -20,12 +20,14 @@
     width: 220px;
     height: 317px;
     background-image: url("../img/year-desktop@1x.png");
+    background-image: -webkit-image-set(url("../img/year-desktop@1x.webp")1x);
     background-repeat: no-repeat;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::before {
       background-image: url("../img/year-desktop@2x.png");
+      background-image: -webkit-image-set(url("../img/year-desktop@2x.webp")2x);
       background-size: 220px auto;
     }
   }
@@ -80,12 +82,14 @@
       width: 244px;
       height: 362px;
       background-image: url("../img/year-tablet@1x.png");
+      background-image: -webkit-image-set(url("../img/year-tablet@1x.webp")1x);
       background-repeat: no-repeat;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       &::before {
         background-image: url("../img/year-tablet@2x.png");
+        background-image: -webkit-image-set(url("../img/year-tablet@2x.webp")2x);
         background-size: 244px auto;
       }
     }

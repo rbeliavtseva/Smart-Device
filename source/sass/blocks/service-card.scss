@@ -20,30 +20,36 @@
   }
 
   &--production {
-    background-image: url("../img/services-1-desktop@1x.jpg");
+    background-image: url("../img/services-1-desktop@1x.png");
+    background-image: -webkit-image-set(url("../img/services-1-desktop@1x.webp")1x);
   }
 
   &--install {
-    background-image: url("../img/services-2-desktop@1x.jpg");
+    background-image: url("../img/services-2-desktop@1x.png");
+    background-image: -webkit-image-set(url("../img/services-2-desktop@1x.webp")1x);
   }
 
   &--details {
-    background-image: url("../img/services-3-desktop@1x.jpg");
+    background-image: url("../img/services-3-desktop@1x.png");
+    background-image: -webkit-image-set(url("../img/services-3-desktop@1x.webp")1x);
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-size: 370 auto;
 
     &--production {
-      background-image: url("../img/services-1-desktop@2x.jpg");
+      background-image: url("../img/services-1-desktop@2x.png");
+      background-image: -webkit-image-set(url("../img/services-1-desktop@2x.webp")2x);
     }
 
     &--install {
-      background-image: url("../img/services-2-desktop@2x.jpg");
+      background-image: url("../img/services-2-desktop@2x.png");
+      background-image: -webkit-image-set(url("../img/services-2-desktop@2x.webp")2x);
     }
 
     &--details {
-      background-image: url("../img/services-3-desktop@2x.jpg");
+      background-image: url("../img/services-3-desktop@2x.png");
+      background-image: -webkit-image-set(url("../img/services-3-desktop@2x.webp")2x);
     }
   }
 }
@@ -92,14 +98,17 @@
 
     &--production {
       background-image: url("../img/services-1-tablet@1x.png");
+      background-image: -webkit-image-set(url("../img/services-1-tablet@1x.webp")1x);
     }
 
     &--install {
       background-image: url("../img/services-2-tablet@1x.png");
+      background-image: -webkit-image-set(url("../img/services-2-tablet@1x.webp")1x);
     }
 
     &--details {
       background-image: url("../img/services-3-tablet@1x.png");
+      background-image: -webkit-image-set(url("../img/services-3-tablet@1x.webp")1x);
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -107,14 +116,17 @@
 
       &--production {
         background-image: url("../img/services-1-tablet@2x.png");
+        background-image: -webkit-image-set(url("../img/services-1-tablet@2x.webp")2x);
       }
 
       &--install {
         background-image: url("../img/services-2-tablet@2x.png");
+        background-image: -webkit-image-set(url("../img/services-2-tablet@2x.webp")2x);
       }
 
       &--details {
         background-image: url("../img/services-3-tablet@2x.png");
+        background-image: -webkit-image-set(url("../img/services-3-tablet@2x.webp")2x);
       }
     }
   }
@@ -141,14 +153,17 @@
 
     &--production {
       background-image: url("../img/services-1-mobile@1x.png");
+      background-image: -webkit-image-set(url("../img/services-1-mobile@1x.webp")1x);
     }
 
     &--install {
       background-image: url("../img/services-2-mobile@1x.png");
+      background-image: -webkit-image-set(url("../img/services-2-mobile@1x.webp")1x);
     }
 
     &--details {
       background-image: url("../img/services-3-mobile@1x.png");
+      background-image: -webkit-image-set(url("../img/services-3-mobile@1x.webp")1x);
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -156,14 +171,17 @@
 
       &--production {
         background-image: url("../img/services-1-mobile@2x.png");
+        background-image: -webkit-image-set(url("../img/services-1-mobile@2x.webp")2x);
       }
 
       &--install {
         background-image: url("../img/services-2-mobile@2x.png");
+        background-image: -webkit-image-set(url("../img/services-2-mobile@2x.webp")2x);
       }
 
       &--details {
         background-image: url("../img/services-3-mobile@2x.png");
+        background-image: -webkit-image-set(url("../img/services-3-mobile@2x.webp")2x);
       }
     }
   }
