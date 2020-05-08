@@ -24,6 +24,18 @@
   margin: 0;
 }
 
+.contact-info__tel {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .contact-info {
     width: 50%;

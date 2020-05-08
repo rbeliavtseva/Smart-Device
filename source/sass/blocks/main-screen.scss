@@ -1,11 +1,11 @@
 .main-screen {
   color: $color-primary;
   background-color: $color-tertiary;
-  background-image: url("../img/start-desktop@1x.png"),
+  background-image: -webkit-image-set(url('../img/start-desktop@1x.webp')1x),
                     url("../img/triangles.svg"),
                     url("../img/ellipse-desktop@1x.png"),
                     url("../img/background-desktop@1x.png");
-  background-image: -webkit-image-set(url('../img/start-desktop@1x.webp')1x),
+  background-image: url("../img/start-desktop@1x.png"),
                     url("../img/triangles.svg"),
                     url("../img/ellipse-desktop@1x.png"),
                     url("../img/background-desktop@1x.png");
@@ -20,11 +20,11 @@
                    100% 878px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/start-desktop@2x.png"),
+    background-image: -webkit-image-set(url('../img/start-desktop@2x.webp')2x),
                       url("../img/triangles.svg"),
                       url("../img/ellipse-desktop@2x.png"),
                       url("../img/background-desktop@2x.png");
-    background-image: -webkit-image-set(url('../img/start-desktop@2x.webp')2x),
+    background-image: url("../img/start-desktop@2x.png"),
                       url("../img/triangles.svg"),
                       url("../img/ellipse-desktop@2x.png"),
                       url("../img/background-desktop@2x.png");

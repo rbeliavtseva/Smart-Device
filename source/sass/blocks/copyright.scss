@@ -25,6 +25,17 @@
   }
 }
 
+.copyright__conditions {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
 .copyright__rights {
   margin-right: 64px;
 }

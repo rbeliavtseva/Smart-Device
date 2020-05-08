@@ -54,14 +54,14 @@
     content: "";
     width: 511px;
     height: 288px;
-    background-image: url("../img/paper-airplane-desktop@1x.png");
     background-image: -webkit-image-set(url("../img/paper-airplane-desktop@1x.webp")1x);
+    background-image: url("../img/paper-airplane-desktop@1x.png");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::after {
-      background-image: url("../img/paper-airplane-desktop@2x.png");
       background-image: -webkit-image-set(url("../img/paper-airplane-desktop@2x.webp")2x);
+      background-image: url("../img/paper-airplane-desktop@2x.png");
       background-size: 511px auto;
     }
   }

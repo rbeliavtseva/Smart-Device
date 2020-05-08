@@ -32,6 +32,17 @@
   width: 100%;
 }
 
+.navigation__link {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .navigation {
     padding: 38px 0 35px 25px;
