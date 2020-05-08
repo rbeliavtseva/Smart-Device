@@ -1,6 +1,6 @@
 .service-card {
   position: relative;
-  width: calc(100% / 3);
+  width: calc((100% / 3) - 20px);
   height: 620px;
   background-repeat: no-repeat;
   background-size: auto 620px;
@@ -35,7 +35,7 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-size: 370 auto;
+    background-size: 370px auto;
 
     &--production {
       background-image: url("../img/services-1-desktop@2x.png");
