@@ -16,13 +16,14 @@
   &::after {
     position: absolute;
     z-index: -1;
-    top: 146px;
+    top: 263px;
     left: calc(50% + 35px);
     transform: translateX(-50%);
     content: "";
-    width: 872px;
-    height: 873px;
+    width: 636px;
+    height: 640px;
     background-image: url("../img/triangle-big.svg");
+    background-position: center;
   }
 
   @media (max-width: $tablet-max-width) {
@@ -31,15 +32,20 @@
     }
 
     &::after {
-      top: 90px;
-      left: 84%;
+      width: 350px;
+      top: 206px;
+      left: auto;
+      right: 0;
+      background-position: -207px center;
+      transform: translateX(0);
     }
   }
 
   @media (max-width: $mobile-max-width) {
     &::after {
       top: calc(36% + 4px);
-      left: calc(100% - 3px);
+      top: 43%;
+      background-position: -90px center;
     }
   }
 }
