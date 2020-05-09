@@ -6,6 +6,9 @@
   color: $color-primary;
   background-color: rgba($color-primary, 0.1);
   resize: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 
   &::placeholder {
     color: $color-primary;
