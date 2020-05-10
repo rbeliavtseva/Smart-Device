@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.contact-info__heading-wrap {
+  width: 100%;
+  display: flex;
+}
+
 .contact-info__heading {
   margin: 0 0 25px 1px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -12,6 +17,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-tertiary;
+  pointer-events: none;
 }
 
 .contact-info__wrap {
@@ -48,7 +54,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0;
+  }
+
+  .contact-info__heading-wrap {
     padding: 28px 15px 25px 15px;
+    cursor: pointer;
   }
 
   .contact-info__heading {
@@ -58,7 +69,7 @@
   .contact-info__wrap {
     display: none;
     width: 100%;
-    padding: 33px 40px 0 0;
+    padding: 7px 40px 26px 15px;
 
     &--no-js {
       display: block;

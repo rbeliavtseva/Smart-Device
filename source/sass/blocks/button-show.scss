@@ -4,8 +4,8 @@
   height: 16px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   outline: none;
+  pointer-events: none;
 
   @media (max-width: $mobile-max-width) {
     display: block;

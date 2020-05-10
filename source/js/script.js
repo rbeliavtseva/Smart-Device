@@ -3,15 +3,16 @@
 /*
 Реализует аккордеон
 */
-var acc = document.querySelectorAll('.button-show');
+// var acc = document.querySelectorAll('.button-show');
+var acc = document.querySelectorAll('.acc');
 var lastOpenAccPanel = null;
 var lastClickedButton = null;
 
 for (var item = 0; item < acc.length; item++) {
   acc[item].addEventListener('click', function (evt) {
-    var button = evt.target;
+    var button = evt.target.querySelector('.button-show');
     button.classList.toggle('button-show--active');
-    var panel = button.nextElementSibling;
+    var panel = evt.target.nextElementSibling;
 
     if (lastOpenAccPanel && lastOpenAccPanel !== panel) {
       lastOpenAccPanel.style.display = 'none';
