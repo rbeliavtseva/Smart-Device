@@ -6,7 +6,7 @@
 .services__container {
   max-width: $desktop-aligner;
   margin: 0 auto;
-  padding: 88px 120px 127px;
+  padding: 88px 120px 97px;
 }
 
 .services__heading {
@@ -44,7 +44,7 @@
 
 @media (max-width: $tablet-max-width) {
   .services__container {
-    padding: 50px 26px 78px 26px;
+    padding: 50px 26px 48px 26px;
   }
 
   .services__heading {
