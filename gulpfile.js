@@ -16,6 +16,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var minify = require('gulp-minify');
+var ghPages = require('gh-pages');
+var path = require('path');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -103,6 +105,11 @@ gulp.task('compress', function () {
     .pipe(minify())
     .pipe(gulp.dest('build/js'))
 });
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("build", gulp.series("clean", "copy", "css", "compress", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
